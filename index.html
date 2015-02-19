@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html ng-app="Chat">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" href="vendor/materialize/dist/css/materialize.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="vendor/materialize/bin/materialize.css"/>
+
+</head>
+<body ng-controller="ChatController as chat">
+<div class="row">
+    <h2>{{chat.message}}</h2>
+    <form class="col s12">
+        <div class="row">
+            <div class="input-field col s6">
+                <input id="first_name" ng-model="chat.user.first" type="text" class="validate">
+                <label for="first_name">First Name</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="last_name"  ng-model="chat.user.last" type="text" class="validate">
+                <label for="last_name">Last Name</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="username" type="text" class="validate">
+                <label for="username">Username</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="password" type="password" class="validate">
+                <label for="password">Password</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="email" type="email" class="validate">
+                <label for="email">Email</label>
+            </div>
+        </div>
+    </form>
+
+    <h3>
+        firstname : {{chat.user.first}}
+    </h3>
+    <h3>
+        lastname : {{chat.user.last}}
+    </h3>
+</div>
+<script src="vendor/jquery/dist/jquery.min.js"></script>
+<script src="vendor/materialize/dist/js/materialize.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.13/angular.min.js"></script>
+<!--<script src="vendor/angular/angular.min.js"></script>-->
+<!--<script src="vendor/angular-route/angular-route.min.js"></script>-->
+<script src="js/test.js"></script>
+<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs//angular.js"></script>-->
+
+<!--<script src="js/app.js"></script>-->
+
+</body>
+</html>
